@@ -10,8 +10,10 @@ https://projecteuler.net/problem=2
 def print_fibonacci(length):
     i = 0
     fib_list = [1, 2]
+    #kompensiere die angebenen Länge gegenüber der bestehenden Listenlänge
+    comp_length = length - len(fib_list)
     while True:
-        if i >= 8:
+        if i >= comp_length:
             break
         fib_list.append(fib_list[-2] + fib_list[-1])
         i += 1
@@ -19,4 +21,4 @@ def print_fibonacci(length):
 
 
 
-print_fibonacci(2)
+print_fibonacci(15)
