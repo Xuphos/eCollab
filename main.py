@@ -10,7 +10,7 @@ https://projecteuler.net/problem=2
 def print_fibonacci(length):
     i = 0
     fib_list = [1, 2]
-    #kompensiere die angebenen Länge gegenüber der bestehenden Listenlänge
+    # kompensiere die angebenen Länge gegenüber der bestehenden Listenlänge
     comp_length = length - len(fib_list)
     while True:
         if i >= comp_length:
@@ -20,5 +20,6 @@ def print_fibonacci(length):
     print(fib_list)
 
 
-
-print_fibonacci(15)
+# lets the User choose the length of the Fibonacci sequence
+fiblen = int(input(f"How long should the Fibanacci sequence be? Choose a number > 1 "))
+print_fibonacci(fiblen)
