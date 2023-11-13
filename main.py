@@ -5,3 +5,7 @@ the first 10 terms will be:
 By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 https://projecteuler.net/problem=2
 """
+def print_fibonacci(length):
+
+    a = 1
+    b = 1
